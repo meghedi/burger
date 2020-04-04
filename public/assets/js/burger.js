@@ -1,6 +1,7 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".devouredToggle").on("click", function(event) {
+      event.preventDefault();
       var id = $(this).data("id");
       var thisElem = $(this);
       
@@ -14,12 +15,10 @@ $(function() {
         data: updatedDevoured
       }).then(
         function() {
-            thisElem.fadeOut();
           console.log("changed devoured to", updatedDevoured);
           // Reload the page to get the updated list
           location.reload();
-        }
-      );
+        }.bind(this));
     });
   
     $(".create-form").on("submit", function(event) {

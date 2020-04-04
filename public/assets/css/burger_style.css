@@ -4,12 +4,25 @@ body{
     margin: 0;
     padding: 0;
 }
-li {
+li{
+  display: flex;
+}
+li div{
     padding: 5px;
     margin: 5px;
     background: #faebd7;
   }
-  
+  .mainContainer{
+    display: flex;
+  }
+  .mainContainer div{
+    flex:auto;
+  }
+
+  .devouredToggle{
+  }
+
+
   .label {
     font-weight: bold;
   }
@@ -25,8 +38,7 @@ li {
   }
   
   ul{
-      float:left;
-      width:30%;
+      list-style-type: none;
   }
 
   ul:first-child{
