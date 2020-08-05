@@ -20,7 +20,7 @@
   "homepage": "https://github.com/meghedi/burger#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.0",
+    "express-handlebars": "^5.1.0",
     "minimist": "^1.2.5",
     "mysql": "^2.18.1"
   }
